@@ -1,0 +1,23 @@
+[Unit]
+Description=DMTC's distributed currency daemon
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/lib/dmtcd/dmtcd.pid
+
+ExecStart=/usr/bin/dmtcd -daemon -pid=/var/lib/dmtcd/dmtcd.pid \
+          -conf=/etc/dmtc.conf -datadir=/var/lib/dmtcd
+
+ExecStop=-/usr/bin/dmtc-cli -conf=/etc/dmtc.conf \
+         -datadir=/var/lib/dmtcd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

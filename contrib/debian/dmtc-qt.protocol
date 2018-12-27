@@ -1,0 +1,11 @@
+[Protocol]
+exec=dmtc-qt '%u'
+protocol=dmtc
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

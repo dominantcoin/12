@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Dmtc
+Comment=Dmtc P2P Cryptocurrency
+Comment[fr]=Dmtc, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Dmtc, eşten eşe kriptografik sanal para birimi
+Exec=dmtc-qt %u
+Terminal=false
+Type=Application
+Icon=dmtc128
+MimeType=x-scheme-handler/dmtc;
+Categories=Office;Finance;

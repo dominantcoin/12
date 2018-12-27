@@ -1,0 +1,26 @@
+# /etc/conf.d/dmtcd: config file for /etc/init.d/dmtcd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/dmtc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/dmtcd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/dmtcd.pid"
+
+# Where to write dmtcd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/dmtcd"
+
+# User and group to own dmtcd process
+#BITCOIND_USER="dmtc"
+#BITCOIND_GROUP="dmtc"
+
+# Path to dmtcd executable
+#BITCOIND_BIN="/usr/bin/dmtcd"
+
+# Nice value to run dmtcd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
