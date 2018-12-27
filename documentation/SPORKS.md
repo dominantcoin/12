@@ -43,11 +43,6 @@ Let's take a look on `SPORK_15_BLOCK_VALUE`, it's a spork that changes block val
 SPORK_ID = 10012
 SPORK_VALUES = ["1000;100", "800;200", "600;400"]
 ```
-It means that there are 3 historic values:
-1000 coins starting from block 100,
-800 coins starting from block 200,
-600 coins starting from block 400.
-
 ## How to activate sporks
 
 Spork can needs to be signed by private key that was used to create spork address which is hardcoded into protocol. 
@@ -83,10 +78,10 @@ Standard protocol is:
 | SPORK_3_SWIFTTX_BLOCK_FILTERING | Activation time | 0 | 
 | SPORK_5_INSTANTSEND_MAX_VALUE | Integer, value in coins | 1000 |  
 | SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT | Activation time | 1537971708 | 
-| SPORK_9_SUPERBLOCKS_ENABLED | Activation time | 4070908800 | 
-| SPORK_10_MASTERNODE_PAY_UPDATED_NODES | Activation time | 4070908800 | 
+| SPORK_9_SUPERBLOCKS_ENABLED | Activation time |  | 
+| SPORK_10_MASTERNODE_PAY_UPDATED_NODES | Activation time |  | 
 | SPORK_12_RECONSIDER_BLOCKS | Integer, number of blocks to reconsider | 0 | 
 | SPORK_13_BLOCK_PAYMENTS | Integers(Percentage), format: `stakeReward;mnReward;treasuryReward;proposalsReward;charityReward;blockHeightActivation` | 6;88;6;0;0 |
-| SPORK_14_TX_FEE | Integers, format: `txValueMultiplier;txSizeMultiplier;maxFee;nMinFeePerKb;blockHeightActivation` | 1000;300;100;10000;600 | 
-| SPORK_15_BLOCK_VALUE | Integer(value in coins) format: `blockValue;blockHeightActivation` | 1200;200 |  
+| SPORK_14_TX_FEE | Integers, format: `txValueMultiplier;txSizeMultiplier;maxFee;nMinFeePerKb;blockHeightActivation` 
+| SPORK_15_BLOCK_VALUE | Integer(value in coins) format: `blockValue;blockHeightActivation`
 

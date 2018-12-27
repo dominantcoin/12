@@ -17,10 +17,6 @@ __Superblock__ is a special block which creates a payment to treasury or somethi
 |250401-314400 |    20     |
 |314401-378400 |    15     |
 
-The subsidy decreases every two years (1051200 blocks) by 200 DMTC, unless spork is not activated, which explicitly controls subsidy.
-Minimum block reward is 100 DMTC, so no matter how much time passes minimum reward will be 100.
-
-`static CAmount GetFullBlockValue(int nHeight)` in `main.cpp` is the place where full block reward is calculated.
 
 ## Ordinary Block Rewards
 
