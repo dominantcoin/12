@@ -171,8 +171,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 500;						// DMTC: 1 day
-        nTargetSpacing = 1 * 500;						// DMTC: 500sec 
+        nTargetTimespan = 3 * 60;						// DMTC: 1 in 3 minutes
+        nTargetSpacing = 3 * 60;						// DMTC: 500sec 
         nMaturity = 20;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 2888888888 * COIN;
@@ -311,8 +311,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 500; // DMTC: 1 day
-        nTargetSpacing = 1 * 500;  // DMTC: 1 minute
+        nTargetTimespan = 1 * 3*60; // DMTC: 1 day
+        nTargetSpacing = 1 * 3*60;  // DMTC: 1 minute
         nMaturity = 1; //byrdset from 100
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 2535000000 * COIN;
@@ -442,8 +442,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 500; // DMTC: 1 day
-        nTargetSpacing = 1 * 500;  // DMTC: 1 minute
+        nTargetTimespan = 1 * 3*60; // DMTC: 1 day
+        nTargetSpacing = 1 * 3*60;  // DMTC: 1 minute
         nMaturity = 20;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 99999999;
@@ -486,8 +486,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 500; // DMTC: 1 day
-        nTargetSpacing = 1 * 500;  // DMTC: 1 minute
+        nTargetTimespan = 1 * 3*60; // DMTC: 1 day
+        nTargetSpacing = 1 * 3*60;  // DMTC: 1 minute
         nMaturity = 1; //byrdset from 100
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 2535000000 * COIN;
@@ -561,8 +561,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 1 * 500; // Dmtc: 1 day
-        nTargetSpacing = 1 * 500;        // Dmtc: 1 minutes
+        nTargetTimespan = 1 * 3*60; // Dmtc: 1 day
+        nTargetSpacing = 1 * 3*60;        // Dmtc: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1544529600;
         genesis.nBits = 0x207fffff;
