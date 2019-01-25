@@ -2250,7 +2250,7 @@ static CAmount GetFullBlockValue(int nHeight)
     }
 
 	if (nHeight == 0) {
-		nSubsidy = 2700000 * COIN;
+		nSubsidy = 5375000 * COIN;
 	} else if (nHeight <= 43500 && nHeight > 0) {
 		nSubsidy = 0.5 * COIN;
 	} else if (nHeight <= 87000 && nHeight > 43501) {
