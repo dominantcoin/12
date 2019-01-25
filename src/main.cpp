@@ -2251,30 +2251,25 @@ static CAmount GetFullBlockValue(int nHeight)
 
 	if (nHeight == 0) {
 		nSubsidy = 2700000 * COIN;
-	} else if (nHeight <= 43500 && nHeight > 0) {
-		nSubsidy = 0.5 * COIN;
-	} else if (nHeight <= 87000 && nHeight > 43501) {
+	} else if (nHeight <= 11000 && nHeight > 0) {
+		nSubsidy = 0.00001 * COIN;
+	} else if (nHeight <= 62400 && nHeight > 11000) {
+		nSubsidy = 26.5 * COIN;
+	} else if (nHeight <= 122400 && nHeight > 62400) {
+		nSubsidy = 36.5 * COIN;
+    } else if (nHeight <= 186400 && nHeight > 122400) {
 		nSubsidy = 50 * COIN;
-	} else if (nHeight <= 130500 && nHeight > 87001) {
-		nSubsidy = 55 * COIN;
-    } else if (nHeight <= 174000 && nHeight > 130501) {
-		nSubsidy = 60 * COIN;
-    } else if (nHeight <= 217500 && nHeight > 174001) {
-	    nSubsidy = 65 * COIN;
-    } else if (nHeight <= 275600 && nHeight > 217501) {
-		nSubsidy = 60 * COIN;
-    } else if (nHeight <= 333700 && nHeight > 275601) {
-		nSubsidy = 55 * COIN;
-    } else if (nHeight <= 391800 && nHeight > 333701) {
-		nSubsidy = 50 * COIN;
-    } else if (nHeight <= 449900 && nHeight > 391801) {
-		nSubsidy = 45 * COIN;
-    } else if (nHeight <= 508000 && nHeight > 449901) {
-		nSubsidy = 40 * COIN;
-	} else if (nHeight > 508001) {
-		nSubsidy = 35 * COIN;
+    } else if (nHeight <= 250400 && nHeight > 186400) {
+	    nSubsidy = 60 * COIN;
+    } else if (nHeight <= 314400 && nHeight > 250400) {
+		nSubsidy = 20 * COIN;
+    } else if (nHeight <= 378400 && nHeight > 314400) {
+		nSubsidy = 15 * COIN;
+	} else if (nHeight > 378400) {
+		nSubsidy = 15 * COIN;
 	} 
 	return nSubsidy;
+    //return std::max<CAmount>(nSubsidy, 250) * COIN;
 }
 
 CBlockRewards GetBlockSubsidity(int nHeight)
