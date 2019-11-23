@@ -1,16 +1,9 @@
 # DMTC Project
 
-DMTC Core integration/staging repository
-=====================================
-
-https://dominantchain.com
-
 ## What is Dmtc?
 ---
 
-Dmtc is a next-generation blockchain protocol that enables any user to begin earning, sending, and spending cryptocurrency easily, without the need for advanced technical knowledge. Dmtc uses a state-of-the-art Proof of Stake consensus mechanism that offers opportunities for users to stake their coins or allocate their coins to Masternodes, which secure the network and verify transactions.
-
-For more information, as well as an immediately usable version of the Dmtc Project software, visit our website's [download page](https://dominantchain.com/download_dmtc_wallet/), or read our [whitepaper](https://dominantchain.com/White_Paper_Eng.pdf).
+Dmtc is a next-generation blockchain protocol that was created for the diploma project. 
 
 ## License 
 ---
@@ -20,7 +13,7 @@ Dmtc Core is released under the terms of the MIT license. See https://opensource
 ## Developing
 ---
 
-The `master0` branch is regularly built and tested by Dmtc's core development team, and is typically the most stable version of the software, but this cannot be guaranteed at any given time.
+The `master0` branch is regularly built and tested by Dmtc's core developer Dmytro, and is typically the most stable version of the software, but this cannot be guaranteed at any given time.
 
 ## Building
 ---
